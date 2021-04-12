@@ -1,0 +1,81 @@
+@import "abstract/variable", "mixin/breakpoints", "abstract/base",
+  "abstract/_font", "abstract/button";
+
+body {
+  @include font-styles($bold);
+}
+
+
+.banner {
+  background-image: linear-gradient(#070727c4),
+    url("../../assets/images/banner-1.jpg");
+}
+
+.carousel-center {
+  @include media-md {
+    width: 50% !important;
+  }
+}
+
+.img-wid {
+  width: 50%;
+  @include media-md {
+    width: auto !important;
+  }
+}
+
+.banner-feature {
+  padding: 0 20px 0 20px;
+  @include media-md {
+    padding: 0 40px 0 40px !important;
+  }
+  @include media-lg {
+    padding: 0px !important;
+  }
+}
+
+.banner-feature-card {
+  background-color: #fff;
+  @include media-lg {
+    position: relative;
+    bottom: 5rem;
+    padding: 1rem 3rem 1rem 1rem;
+  }
+  @include media-xl {
+    padding: 2rem 8rem 2rem 2rem;
+  }
+}
+
+.card-badge {
+  background-color: yellow;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+
+.bg-color {
+  background-color: #14143b;
+}
+.bg-img {
+  background-image: url("../../assets/images/success-story.jpg");
+}
+
+.footer-form {
+  position: relative;
+  @include media-md {
+    bottom: 3rem !important;
+    width: 50% !important;
+  }
+}
+
+.form-btn {
+  position: absolute;
+  right: 4rem;
+}
+
+@include media-md {
+  .nav-item {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,16 @@
+$font-family: "Poppins", sans-serif;
+$semi-bold: (
+  font-family: $font-family,
+  font-weight: 400,
+);
+
+$bold: (
+  font-family: $font-family,
+  font-weight: 600,
+);
+
+@mixin font-styles($map) {
+  @each $x, $y in $map {
+    #{$x}: $y;
+  }
+}

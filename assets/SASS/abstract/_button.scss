@@ -1,0 +1,5 @@
+@each $btn in $btn-color {
+  .btn-#{nth($btn, 1)} {
+    background-color: nth($btn, 2);
+  }
+}
